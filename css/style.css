@@ -125,9 +125,13 @@ ul { list-style: none; }
 .hamburger span {
   display: block;
   width: 24px; height: 2px;
-  background: var(--dark-2);
+  background: var(--white);
   border-radius: var(--radius-full);
   transition: var(--transition);
+}
+
+.navbar.scrolled .hamburger span {
+  background: var(--dark-2);
 }
 
 /* ==============================
@@ -234,7 +238,12 @@ ul { list-style: none; }
   align-items: center;
   text-align: center;
   max-width: 800px;
+  width: 100%;
   gap: 24px;
+}
+
+.hero-text {
+  width: 100%;
 }
 
 .hero-avatar {
@@ -355,7 +364,6 @@ ul { list-style: none; }
   z-index: 2;
   display: flex;
   align-items: center;
-  gap: 0;
   background: rgba(255,255,255,.06);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255,255,255,.1);
@@ -865,7 +873,7 @@ ul { list-style: none; }
 .pub-year {
   font-size: 1.4rem;
   font-weight: 800;
-  color: var(--primary-light);
+  color: var(--primary);
   min-width: 56px;
   line-height: 1;
   padding-top: 4px;
